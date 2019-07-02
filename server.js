@@ -5,6 +5,5 @@ const db = new Q('database');
 db.monitorEvent('create');
 db.monitorEvent('update');
 db.monitorEvent('delete');
+db.monitorEvent('get');
 
-const network = new Q('saved');
-network.monitorEvent('saved');
